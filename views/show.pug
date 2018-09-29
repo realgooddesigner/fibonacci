@@ -1,6 +1,10 @@
 extends layout
 
 block content
+
+  .Back
+    a.BackArrow(href='/') &lt;&nbsp;Back
+    
   .Block
     if image
       img(src=image.large.url, alt=title, title=title)

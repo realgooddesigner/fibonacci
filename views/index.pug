@@ -1,11 +1,15 @@
 extends layout
 
 block content
+
   h1.ChannelTitle
     = title
 
   .Grid
     each block in helpers.shuffle(contents)
+      if block.description
+        p.GridBlock
+          = block.description
       if block.image
         a.GridBlock(
           href='/blocks/' + block.id
