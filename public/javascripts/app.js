@@ -5,7 +5,7 @@ imagesLoaded('.Grid', ({ images }) => {
     img.classList.add('img--loaded')
   );
 
-  const packery = new Packery('.Grid', {
+  const packery = new Packery('.Grid', { 
     itemSelector: '.GridBlock',
     gutter: 5,
     percentPosition: true,

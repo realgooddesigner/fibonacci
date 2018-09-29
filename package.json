@@ -1,7 +1,7 @@
 {
-  "name": "warburg",
+  "name": "fibonacci",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -9,7 +9,7 @@
     "node": "8.4.x"
   },
   "dependencies": {
-    "are.na": "^0.0.7",
+    "are.na": "^0.1.1",
     "axios": "^0.17.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
@@ -18,5 +18,26 @@
     "morgan": "~1.9.0",
     "pug": "~2.0.0-rc.4",
     "serve-favicon": "~2.4.5"
-  }
+  },
+  "description": "Spiraling",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realgooddesigner/fibonacci.git"
+  },
+  "author": "realgooddesigner",
+  "license": "MIT",
+  "devDependencies": {
+    "modularscale-sass": "^3.0.7",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.20.2"
+  },
+  "bugs": {
+    "url": "https://github.com/realgooddesigner/fibonacci/issues"
+  },
+  "homepage": "https://github.com/realgooddesigner/fibonacci#readme",
+  "keywords": [
+    "spiral"
+  ]
 }
