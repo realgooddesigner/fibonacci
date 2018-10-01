@@ -1,3 +1,7 @@
 .DS_Store
 .env
+.ssh
+id_rsa
+id_rsa .pub
+key.png
 node_modules

@@ -7,12 +7,17 @@ block content
 
   .Grid
     each block in helpers.shuffle(contents)
-      if block.description
-        p.GridBlock
-          = block.description
-      if block.image
-        a.GridBlock(
-          href='/blocks/' + block.id
-          style='width: ' + helpers.rand(100, 400) + 'px;'
-        )
-          img(src=block.image.display.url)
+      .GridBlock(
+        style='width: ' + helpers.rand(100, 400) + 'px;' + 'height: ' + helpers.fibonacci() + 'px;'
+      )
+        if block.title
+          h2= block.title
+
+        if block.description
+          p= block.description
+
+        if block.image
+          a(
+            href='/blocks/' + block.id
+          )
+            img(src=block.image.display.url)
